@@ -1,0 +1,8 @@
+Portal de peliculas (cuevana, netflix):
+
+Nombre: Daikib
+Colores: #2E1F66, #A18CEA, #6845E6, #463D66, #5136B3 (tonos purpuras).
+
+Tipo de letra: 
+Logo: Source Sans Pro
+Textos:  Merryweather Sans, Lora.
