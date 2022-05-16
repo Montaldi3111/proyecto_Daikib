@@ -1,3 +1,13 @@
+/* @font-face {
+    font-family: 'TT Bricks';
+    src: local('TT Bricks Black'), local('TT-Bricks-Black'),
+        url('TTBricks-Black.woff2') format('woff2'),
+        url('TTBricks-Black.woff') format('woff'),
+        url('TTBricks-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  } */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +30,11 @@ header{
         justify-content:space-between;
     }
     
-    header .logo img{
-        width: 3rem;
-        height: 3rem;
+    header .logo h1 {
+        font-family: "TT Bricks";
+        font-weight: 900;
+        color: white;
+        font-size: 30px;
     }
     
     header .login-register{

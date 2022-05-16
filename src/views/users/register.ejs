@@ -1,0 +1,32 @@
+<%- include("../partials/head.ejs") %> 
+<body>
+    <%- include("../partials/header.ejs") %>
+    <section class="title">
+        <h1>Registrarse</h1>
+    </section>
+    <main>
+        <form action="create" method="post" class="register-form">
+            <fieldset>
+                <label for="username">Nombre de usuario</label><br>
+                <input type="text" name="username" id="username">
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <fieldset>
+                <label for="password">Contraseña</label><br>
+                <input type="password" name="password" id="password">
+            </fieldset>
+            <fieldset>
+                <label for="repeat-password">Repetir contraseña</label><br>
+                <input type="password" name="repeat-password" id="repeat-password">
+            </fieldset>
+            <section class="buttons">
+                <button type="submit" class="register">Registrarse</button>
+                <button type="reset">Borrar datos</button>
+        </section>
+        </form>
+    </main>
+    <%- include("../partials/footer.ejs") %> 
+</body>

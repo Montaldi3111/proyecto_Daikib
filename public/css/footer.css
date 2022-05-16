@@ -15,23 +15,45 @@ footer .footer-content{
     padding: 1rem .5rem;
 }
 
-footer .logo-socials img{
-    height: 8em;
+footer .logo-footer h1{
+    text-align: center;
+    color: white;
 }
+
 
 footer .logo-socials .social-medias{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: center;
 }
 
 footer .logo-socials .social-medias i{
+    margin: 10px;
     font-size: 30px;
     color: white;
 }
 
 footer .list-1{
+    font-size: 16px;
     list-style: none;
     color: white;
+}
+
+footer .list-1 li{
+    margin-bottom: 10px;
+}
+
+footer .list-2{
+    text-align: left;
+    font-size: 16px;
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .list-2 li{
+    margin-bottom: 5px;
 }
 
