@@ -8,6 +8,53 @@ footer{
     font-size: 20px;
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+    footer .footer-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #A18CEA;
+        padding: 1rem .5rem;
+    }
+    
+    footer .logo-footer h1{
+        color: white;
+    }
+    
+    
+    footer .logo-socials .social-medias{
+        margin: auto;
+        width: 70%;
+        list-style: none;
+        text-align: center;
+    }
+    
+    footer .logo-socials .social-medias i{
+        font-size: 30px;
+        color: white;
+    }
+
+    footer ul{
+        list-style: none;
+    }
+
+    footer .list-1{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    footer .list-2{
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    footer .list-2 li{
+        text-align: center;
+    }
+
+}
+
 footer .footer-content{
     display: flex;
     justify-content: space-between;
