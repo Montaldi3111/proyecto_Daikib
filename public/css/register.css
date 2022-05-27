@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Merriweather", sans-serif;
+}
+
+.title{
+    background-color: #2E1F66;
+    padding: 3rem 0 4rem 0 ;
+    color:white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+main{
+    background-color: #2E1F66;
+    color:white;
+    text-align: center;
+    justify-content: center;
+}
+
+main .register-form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .register-form fieldset{
+    border: none;
+    margin-bottom: 2rem;
+}
+
+
+main .register-form label{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+main .register-form input{
+    margin-top: .7rem;
+    width: 20rem;
+    border: none;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+main .register-form .buttons{
+    margin-bottom: 5rem;
+}
+
+main .buttons button{
+    width: 9rem;
+    font-weight: bolder;
+    color: white;
+    background-color: #6845E6;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+main .register{
+    margin-right: 1.5rem;
+}

@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/css/header.css" />
+<link rel="stylesheet" href="/css/footer.css" />
+<!-- Iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Merriweather+Sans&display=swap" rel="stylesheet">
+<link href="//db.onlinewebfonts.com/c/527d71c7f310f0028064c818fff49d52?family=TT+Bricks" rel="stylesheet" type="text/css"/>
+<% if (locals.styles) { %>
+<% styles.forEach(style => { %>
+<link rel="stylesheet" href="/css<%= style %>.css" />
+<% }) %>
+ <% } %>

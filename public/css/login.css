@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Merriweather", sans-serif;
+}
+
+main{
+    background-color: #2E1F66;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+main .title{
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+main .login{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+main fieldset{
+    border: none;
+    margin-top: 3rem;
+}
+
+main fieldset label{
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+main .login input{
+    width: 300px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 20px;
+    padding: 6px;
+}
+
+main .login-form button{
+    font-weight: bolder;
+    font-size: 16px;
+    margin-top: 2rem;
+    width: 6rem;
+    color: white;
+    background-color: #6845E6;
+    padding: 9px;
+    border: none;
+    border-radius: 20px;
+}
+
+main .register-forgot{
+    text-align: center;
+    font-weight: bolder;
+}
+
+main .register-forgot p{
+    margin: 2rem 0 2rem 0;
+}
+
