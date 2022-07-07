@@ -26,6 +26,10 @@ module.exports = (Sequelize, DataType) => {
         description: {
             type: DataType.STRING,
             notNull:false
+        },
+        video: {
+            type: DataType.STRING,
+            notNull: false
         }
     }
 
