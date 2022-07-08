@@ -39,5 +39,15 @@ module.exports = (Sequelize, DataType) => {
     }
 
     const Movie = Sequelize.define(alias, cols, config)
+
+         // belongsto = pertenece, establezco la relacion de la tabla de peliculas con la de generos
+         Movie.associate = (models) => {
+            Movie.belongsTo(models.Genre, {
+              as: "generos",
+              foreignKey: "genre_id",
+            });
+          };
+
+
     return Movie;
 }

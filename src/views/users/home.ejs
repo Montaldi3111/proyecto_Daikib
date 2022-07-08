@@ -4,17 +4,10 @@
     <main>
      <section class="category-list">
          <h3>Categorias</h3><i class="fa-solid fa-angles-right"></i>
-        <ul>
-            <li>Comedia</li>
-            <li>Acción</li>
-            <li>Drama</li>
-            <li>Terror</li>
-            <li>Ciencia Ficción</li>
-            <li>Fantasia</li>
-            <li>Animación</li>
-            <li>Aventura</li>
-            <li>Deportes</li>
-            <li>Misterio</li>
+        <ul>  <% for( let i = 0; i < genero.length; i++) { %>
+         <li><%= genero[i].name %></li>
+        <% } %>
+
         </ul>
         <ul class="other-list">
             <li>Peliculas</li>
@@ -24,62 +17,12 @@
         </ul>
      </section>
      <section class="movies">
-        <div class="movie-description">
-            <img src="/images/movies-img/charlie-y-la-fabrica-de-chocolate.jpg" alt="">
-            <p>Charlie y la fabrica de chocolate</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/exorcista.jpg" alt="">
-            <p>El exorcista</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/resplandor.jpg" alt="">
-            <p>El resplandor</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/strange-multiverse.jpg" alt="">
-            <p>Dr. Strange y el multiverso de la locura</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/wall-e.jpg" alt="">
-            <p>Wall-e</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/terminator.jpg" alt="">
-            <p>Terminator: Genesis</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/shang-chi.jpg" alt="">
-            <p>Shang-Chi</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/nacido-del-rey.jpg" alt="">
-            <p>Charlie y la fabrica de chocolate</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/matrix.jpg" alt="">
-            <p>Matrix</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/viuda-negra.png" alt="">
-            <p>Viuda negra</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/avatar.jpg" alt="">
-            <p>Avatar</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/spiderman-home-coming.jpg" alt="">
-            <p>Spider Man: de regreso a casa</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/extraño-mundo-jack.jpg" alt="">
-            <p>El extraño mundo de jack</p>
-        </div>
-        <div class="movie-description">
-            <img src="/images/movies-img/planeta-simios.jpg" alt="">
-            <p>El planeta de los simios</p>
-        </div>
+        <% for (let i = 0; i< movies.length; i++) {%>
+             <div class="movie-description">
+                <img src="<%= movies[i].img %>" alt="">
+                <p><%= movies[i].name %></p>
+            </div>
+            <% } %>  
      </section>
     </main>
     <%- include("../partials/footer.ejs") %> 
