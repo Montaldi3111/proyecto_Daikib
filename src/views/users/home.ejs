@@ -19,8 +19,8 @@
      <section class="movies">
         <% for (let i = 0; i< movies.length; i++) {%>
              <div class="movie-description">
-                <img src="<%= movies[i].img %>" alt="">
-                <p><%= movies[i].name %></p>
+                <a href="/video/<%= movies[i].id %>" styles="text-decoration: none;"><img src="<%= movies[i].img %>" alt="">
+                <p><%= movies[i].name %></p></a>
             </div>
             <% } %>  
      </section>

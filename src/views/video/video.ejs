@@ -1,0 +1,26 @@
+<%- include("../partials/head.ejs") %> 
+<body>
+    <%- include("../partials/header.ejs") %>
+
+    <main>
+        <section class="video-description">
+                <img src= "<%= video.img %>" alt="">
+                    <ul class="description">
+                    <li><%= video.name %></li>
+                    <li><%= video.description %></li>
+                </ul>
+        </section>
+        <section class="video">
+                <img src ="<%= video.img %>">
+            </div>
+            <div class="video-rating">
+                <p>Rating: <%= video.rating %></p>
+            </div>
+            <div>
+                <button>Descargar</button>
+            </div>
+        </section>
+    </main>
+
+    <%- include("../partials/footer.ejs") %> 
+</body>

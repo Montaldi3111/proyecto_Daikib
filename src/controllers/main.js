@@ -6,11 +6,15 @@ const controller = {
                 association: "generos"
             }]
         }).then(peliculas =>{
-            db.Genre.findAll().then(generos => {
+            db.Genre.findAll({
+                include: [{
+                    association: "movie"
+                }]
+            }).then(generos => {
                 res.render("users/home", {
                     styles:["/home"],
                     movies: peliculas,
-                    genero: generos 
+                    genero: generos
                 })
             })
             
@@ -18,7 +22,19 @@ const controller = {
             res.send(err)
         })
         
-    }
+    },
+
+    video: (req, res) => {
+        db.Movie.findByPk(req.params.id)
+        .then((result) => {
+            res.render("video/video", {
+                styles: ["/video"],
+                video: result
+            })
+        })
+    },
+
+    
 }
 
 module.exports = controller;

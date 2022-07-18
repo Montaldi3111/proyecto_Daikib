@@ -232,8 +232,13 @@ body {
         width: 7rem;
         height: 12rem;
     }
+
+    main .movies a {
+        text-decoration: none;
+    }
     
     main .movies p {
+        color: white;
         margin: auto;
         text-align: center;
         font-size: 14px;
